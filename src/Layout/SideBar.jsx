@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Dropdown from "../Components/Dropdown";
 import { sidebarData, announcementData } from "../Data/SidebarData";
+import LogoutButton from "../Components/Logout";
 
 const Sidebar = ({ onSectionSelect }) => {
   const [activeSection, setActiveSection] = useState(null);
@@ -44,7 +45,11 @@ const Sidebar = ({ onSectionSelect }) => {
             onSectionSelect={onSectionSelect}
           />
         ))}
+      <div>
+        <LogoutButton/>
       </div>
+      </div>
+
     </aside>
   );
 };

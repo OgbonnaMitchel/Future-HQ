@@ -1,6 +1,7 @@
 import React from "react";
 import NotificationIcon from "../assets/images/notifications.png";
-import ProfileAvatar from "../assets/images/Avatar.png";
+import Profile from "../Components/Profile";
+// import ProfileAvatar from "../assets/images/Avatar.png";
 
 const Navbar = ({ title }) => {
   return (
@@ -21,17 +22,7 @@ const Navbar = ({ title }) => {
           alt="Notifications"
           className="w-5 h-5 cursor-pointer"
         />
-
-        <div className="flex items-center gap-2">
-          <img
-            src={ProfileAvatar}
-            alt="User"
-          />
-          <div className="text-sm leading-tight">
-            <p className="font-medium text-[#101828] ">Olivia Rhye</p>
-            <p className="text-xs text-gray-500">FL-23432</p>
-          </div>
-        </div>
+        <Profile/>
       </div>
     </nav>
   );

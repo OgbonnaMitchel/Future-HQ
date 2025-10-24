@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "../Layout/SideBar";
 import Navbar from "../Layout/Navbar";
-import AnnouncementCardList from "../Components/AnnouncementCardList";
+// import AnnouncementCardList from "../Components/AnnouncementCardList";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   const [selectedSection, setSelectedSection] = useState(
     ""
   );
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
 
         {/* Page Content */}
         <main className="flex-1 overflow-y-auto no-scrollbar p-6 mx-auto ">
-          {children}
+         <Outlet/>
         </main>
       </div>
     </div>

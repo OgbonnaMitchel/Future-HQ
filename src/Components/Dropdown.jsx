@@ -51,6 +51,8 @@ const Dropdown = ({
     setActiveItem(title);
     setActiveHeader(true);
     if (onSectionSelect) onSectionSelect(title);
+
+    
   };
 
   // Add new community item
